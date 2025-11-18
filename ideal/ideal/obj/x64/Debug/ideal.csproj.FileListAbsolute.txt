@@ -2,7 +2,6 @@ D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\e_sqlite3.d
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\User.dll.config
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\User.dll
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\User.pdb
-D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\Dapper.dll
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Data.Desktop.v25.1.dll
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Data.v25.1.dll
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Drawing.v25.1.dll
@@ -24,7 +23,6 @@ D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\Z.EntityFra
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Pdf.v25.1.Core.dll
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Pdf.v25.1.Drawing.dll
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Sparkline.v25.1.Core.dll
-D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\Dapper.xml
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Data.Desktop.v25.1.xml
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Data.v25.1.xml
 D:\OneDrive\Projeler\Geist\UserDll\UserDll\ideal\ideal\bin\x64\Debug\DevExpress.Drawing.v25.1.xml

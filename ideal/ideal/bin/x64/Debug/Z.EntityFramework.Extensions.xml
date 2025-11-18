@@ -2625,6 +2625,7 @@
             <summary>
             When true, disables the use of fixed temporary table names and generates unique names instead. 
             By default, fixed names are used to maximize query plan reuse.
+            This option is automatically disabled when using the EF+ Query Future feature.
             </summary>
         </member>
         <member name="P:Z.EntityFramework.Plus.TemporalTableManager.DisableDateTimeParameter">

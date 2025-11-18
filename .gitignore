@@ -1,32 +1,12 @@
-# Visual Studio otomatik dosyaları
-.vs/
-*.user
-*.suo
-*.cache
-*.db
-*.vsp
-*_backup*
-*.opendb
-
-# Build klasörleri
+# Build
 bin/
 obj/
-Debug/
-Release/
-x64/
-x86/
 
-# NuGet Paketleri
+# NuGet
 packages/
-*.nupkg
-*.snupkg
 
-# SQLite temp dosyaları
-*.db-shm
-*.db-wal
+# Visual Studio
+.vs/
 
-# Log
-*.log
-
-# Publish output
-publish/
+# Cache
+*.cache

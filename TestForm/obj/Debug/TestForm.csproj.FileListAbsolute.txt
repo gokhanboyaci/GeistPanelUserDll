@@ -1,5 +1,0 @@
-D:\OneDrive\Projeler\Geist\UserDll\UserDll\TestForm\obj\Debug\TestForm.csproj.AssemblyReference.cache
-D:\OneDrive\Projeler\Geist\UserDll\UserDll\TestForm\obj\Debug\TestForm.FrmTestMain.resources
-D:\OneDrive\Projeler\Geist\UserDll\UserDll\TestForm\obj\Debug\TestForm.Properties.Resources.resources
-D:\OneDrive\Projeler\Geist\UserDll\UserDll\TestForm\obj\Debug\TestForm.csproj.GenerateResource.cache
-D:\OneDrive\Projeler\Geist\UserDll\UserDll\TestForm\obj\Debug\TestForm.csproj.CoreCompileInputs.cache

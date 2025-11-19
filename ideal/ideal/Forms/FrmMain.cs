@@ -185,10 +185,10 @@ namespace ideal.Forms
                 };
 
             var start = new TimeSpan(9, 55, 30);
-            var end = new TimeSpan(18, 25, 0);
+            var end = new TimeSpan(18, 20, 0);
 
-            var start2 = new TimeSpan(18, 15, 30);
-            var end2 = new TimeSpan(18, 45, 0);
+            var start2 = new TimeSpan(18, 25, 30);
+            var end2 = new TimeSpan(18, 50, 0);
 
             AddJob("IMKB - Yüzeysel",
                 ct => _idealHelper.IMKB_YuzeyselVeri_OkuAsync(progressBarImkbYuzeyselVeri, ct),
@@ -214,11 +214,11 @@ namespace ideal.Forms
 
             AddJob("IMKB - Tarama Uyumsuzluklar",
                 ct => _idealHelper.IMKB_Uyumsuzluk_OkuAsync(progressBarTaramaUyumsuzluk, ct),
-                start, end, 1 * 60, btnImkbTaramaUyumsuzluk.Checked);
+                start, end, 60 * 60, btnImkbTaramaUyumsuzluk.Checked);
 
             AddJob("IMKB - Tarama SRSI",
                 ct => _idealHelper.IMKB_RSISinyal_OkuAsync(progressBarTaramaSRSI, ct),
-                start, end, 1 * 60, btnImkbTaramaSRSI.Checked);
+                start, end, 60 * 60, btnImkbTaramaSRSI.Checked);
 
             AddJob("IMKB - Bar Data Aralikli",
                 ct => _idealHelper.IMKB_BarData_OkuAsync_Aralikli(progressBarImkbBarDataSembol, ct),

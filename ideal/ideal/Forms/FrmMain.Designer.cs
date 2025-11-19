@@ -32,6 +32,7 @@
             this.tabPaneMain = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabPageMain = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.grupControlStart = new DevExpress.XtraEditors.GroupControl();
+            this.checkEditAlgobarDataContext = new DevExpress.XtraEditors.CheckEdit();
             this.txtSembol = new DevExpress.XtraEditors.TextEdit();
             this.txtEndCalendar = new DevExpress.XtraEditors.DateEdit();
             this.checkEditGeistContext = new DevExpress.XtraEditors.CheckEdit();
@@ -40,14 +41,12 @@
             this.btnStart = new DevExpress.XtraEditors.SimpleButton();
             this.btnStop = new DevExpress.XtraEditors.SimpleButton();
             this.groupControlProgress = new DevExpress.XtraEditors.GroupControl();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.progressBarImkbBarDataTekSembol = new DevExpress.XtraEditors.ProgressBarControl();
-            this.btnImkbBarDataTekSembol = new DevExpress.XtraEditors.CheckButton();
-            this.btnImkbBarDataSembol = new DevExpress.XtraEditors.CheckButton();
-            this.progressBarImkbBarDataSembol = new DevExpress.XtraEditors.ProgressBarControl();
+            this.btnImkbBarDataGunSonu = new DevExpress.XtraEditors.CheckButton();
+            this.progressBarImkbBarDataGunSonu = new DevExpress.XtraEditors.ProgressBarControl();
+            this.btnImkbTaramaSRSI = new DevExpress.XtraEditors.CheckButton();
+            this.progressBarTaramaSRSI = new DevExpress.XtraEditors.ProgressBarControl();
             this.btnImkbTaramaUyumsuzluk = new DevExpress.XtraEditors.CheckButton();
             this.progressBarTaramaUyumsuzluk = new DevExpress.XtraEditors.ProgressBarControl();
             this.btnImkbKompozitData = new DevExpress.XtraEditors.CheckButton();
@@ -58,16 +57,18 @@
             this.btnImkbYuzeyselVeri = new DevExpress.XtraEditors.CheckButton();
             this.progressBarImkbYuzeyselVeri = new DevExpress.XtraEditors.ProgressBarControl();
             this.progressBarDD = new DevExpress.XtraEditors.ProgressBarControl();
-            this.checkEditAlgobarDataContext = new DevExpress.XtraEditors.CheckEdit();
-            this.btnImkbTaramaSRSI = new DevExpress.XtraEditors.CheckButton();
-            this.progressBarTaramaSRSI = new DevExpress.XtraEditors.ProgressBarControl();
-            this.btnImkbBarDataGunSonu = new DevExpress.XtraEditors.CheckButton();
-            this.progressBarImkbBarDataGunSonu = new DevExpress.XtraEditors.ProgressBarControl();
+            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.progressBarImkbBarDataTekSembol = new DevExpress.XtraEditors.ProgressBarControl();
+            this.btnImkbBarDataTekSembol = new DevExpress.XtraEditors.CheckButton();
+            this.btnImkbBarDataSembol = new DevExpress.XtraEditors.CheckButton();
+            this.progressBarImkbBarDataSembol = new DevExpress.XtraEditors.ProgressBarControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabPaneMain)).BeginInit();
             this.tabPaneMain.SuspendLayout();
             this.tabPageMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grupControlStart)).BeginInit();
             this.grupControlStart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditAlgobarDataContext.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSembol.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndCalendar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndCalendar.Properties.CalendarTimeProperties)).BeginInit();
@@ -80,17 +81,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
-            this.tabNavigationPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataTekSembol.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataSembol.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataGunSonu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarTaramaSRSI.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarTaramaUyumsuzluk.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarKompozitData.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarData.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbYuzeyselVeri.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarDD.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditAlgobarDataContext.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarTaramaSRSI.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataGunSonu.Properties)).BeginInit();
+            this.tabNavigationPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataTekSembol.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataSembol.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPaneMain
@@ -131,6 +131,16 @@
             this.grupControlStart.TabIndex = 40;
             this.grupControlStart.Text = "Kontrol";
             this.grupControlStart.DoubleClick += new System.EventHandler(this.grupControlStart_DoubleClick);
+            // 
+            // checkEditAlgobarDataContext
+            // 
+            this.checkEditAlgobarDataContext.Enabled = false;
+            this.checkEditAlgobarDataContext.Location = new System.Drawing.Point(330, 78);
+            this.checkEditAlgobarDataContext.Name = "checkEditAlgobarDataContext";
+            this.checkEditAlgobarDataContext.Properties.Caption = "DB - Algobar Data";
+            this.checkEditAlgobarDataContext.Size = new System.Drawing.Size(112, 20);
+            this.checkEditAlgobarDataContext.TabIndex = 16;
+            this.checkEditAlgobarDataContext.TabStop = false;
             // 
             // txtSembol
             // 
@@ -252,57 +262,45 @@
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.Size = new System.Drawing.Size(445, 319);
             // 
-            // tabNavigationPage2
+            // btnImkbBarDataGunSonu
             // 
-            this.tabNavigationPage2.Caption = "Tamamlama";
-            this.tabNavigationPage2.Controls.Add(this.progressBarImkbBarDataTekSembol);
-            this.tabNavigationPage2.Controls.Add(this.btnImkbBarDataTekSembol);
-            this.tabNavigationPage2.Controls.Add(this.btnImkbBarDataSembol);
-            this.tabNavigationPage2.Controls.Add(this.progressBarImkbBarDataSembol);
-            this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(445, 319);
+            this.btnImkbBarDataGunSonu.Appearance.Options.UseTextOptions = true;
+            this.btnImkbBarDataGunSonu.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.btnImkbBarDataGunSonu.Checked = true;
+            this.btnImkbBarDataGunSonu.Location = new System.Drawing.Point(6, 94);
+            this.btnImkbBarDataGunSonu.Name = "btnImkbBarDataGunSonu";
+            this.btnImkbBarDataGunSonu.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.btnImkbBarDataGunSonu.Size = new System.Drawing.Size(176, 23);
+            this.btnImkbBarDataGunSonu.TabIndex = 85;
+            this.btnImkbBarDataGunSonu.TabStop = false;
+            this.btnImkbBarDataGunSonu.Text = "IMKB - Bar Data Gun Sonu - 5 DK";
             // 
-            // progressBarImkbBarDataTekSembol
+            // progressBarImkbBarDataGunSonu
             // 
-            this.progressBarImkbBarDataTekSembol.Location = new System.Drawing.Point(173, 35);
-            this.progressBarImkbBarDataTekSembol.Name = "progressBarImkbBarDataTekSembol";
-            this.progressBarImkbBarDataTekSembol.Size = new System.Drawing.Size(267, 23);
-            this.progressBarImkbBarDataTekSembol.TabIndex = 73;
-            this.progressBarImkbBarDataTekSembol.Visible = false;
+            this.progressBarImkbBarDataGunSonu.Location = new System.Drawing.Point(188, 94);
+            this.progressBarImkbBarDataGunSonu.Name = "progressBarImkbBarDataGunSonu";
+            this.progressBarImkbBarDataGunSonu.Size = new System.Drawing.Size(252, 23);
+            this.progressBarImkbBarDataGunSonu.TabIndex = 84;
             // 
-            // btnImkbBarDataTekSembol
+            // btnImkbTaramaSRSI
             // 
-            this.btnImkbBarDataTekSembol.Appearance.Options.UseTextOptions = true;
-            this.btnImkbBarDataTekSembol.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.btnImkbBarDataTekSembol.Location = new System.Drawing.Point(5, 35);
-            this.btnImkbBarDataTekSembol.Name = "btnImkbBarDataTekSembol";
-            this.btnImkbBarDataTekSembol.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnImkbBarDataTekSembol.Size = new System.Drawing.Size(162, 23);
-            this.btnImkbBarDataTekSembol.TabIndex = 72;
-            this.btnImkbBarDataTekSembol.TabStop = false;
-            this.btnImkbBarDataTekSembol.Text = "IMKB - Bar Data Tek Sembol";
-            this.btnImkbBarDataTekSembol.Visible = false;
+            this.btnImkbTaramaSRSI.Appearance.Options.UseTextOptions = true;
+            this.btnImkbTaramaSRSI.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.btnImkbTaramaSRSI.Checked = true;
+            this.btnImkbTaramaSRSI.Location = new System.Drawing.Point(6, 181);
+            this.btnImkbTaramaSRSI.Name = "btnImkbTaramaSRSI";
+            this.btnImkbTaramaSRSI.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.btnImkbTaramaSRSI.Size = new System.Drawing.Size(176, 23);
+            this.btnImkbTaramaSRSI.TabIndex = 83;
+            this.btnImkbTaramaSRSI.TabStop = false;
+            this.btnImkbTaramaSRSI.Text = "IMKB - Tarama SRSI - 60 DK";
             // 
-            // btnImkbBarDataSembol
+            // progressBarTaramaSRSI
             // 
-            this.btnImkbBarDataSembol.Appearance.Options.UseTextOptions = true;
-            this.btnImkbBarDataSembol.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.btnImkbBarDataSembol.Location = new System.Drawing.Point(5, 6);
-            this.btnImkbBarDataSembol.Name = "btnImkbBarDataSembol";
-            this.btnImkbBarDataSembol.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnImkbBarDataSembol.Size = new System.Drawing.Size(162, 23);
-            this.btnImkbBarDataSembol.TabIndex = 71;
-            this.btnImkbBarDataSembol.TabStop = false;
-            this.btnImkbBarDataSembol.Text = "IMKB - Bar Data Sembol Tarihsel";
-            this.btnImkbBarDataSembol.Visible = false;
-            // 
-            // progressBarImkbBarDataSembol
-            // 
-            this.progressBarImkbBarDataSembol.Location = new System.Drawing.Point(173, 6);
-            this.progressBarImkbBarDataSembol.Name = "progressBarImkbBarDataSembol";
-            this.progressBarImkbBarDataSembol.Size = new System.Drawing.Size(267, 23);
-            this.progressBarImkbBarDataSembol.TabIndex = 70;
-            this.progressBarImkbBarDataSembol.Visible = false;
+            this.progressBarTaramaSRSI.Location = new System.Drawing.Point(188, 181);
+            this.progressBarTaramaSRSI.Name = "progressBarTaramaSRSI";
+            this.progressBarTaramaSRSI.Size = new System.Drawing.Size(252, 23);
+            this.progressBarTaramaSRSI.TabIndex = 82;
             // 
             // btnImkbTaramaUyumsuzluk
             // 
@@ -315,7 +313,7 @@
             this.btnImkbTaramaUyumsuzluk.Size = new System.Drawing.Size(176, 23);
             this.btnImkbTaramaUyumsuzluk.TabIndex = 81;
             this.btnImkbTaramaUyumsuzluk.TabStop = false;
-            this.btnImkbTaramaUyumsuzluk.Text = "IMKB - Tarama Uyumsuzluk - 1 DK";
+            this.btnImkbTaramaUyumsuzluk.Text = "IMKB - Tarama Uyumsuzluk - 60 DK";
             // 
             // progressBarTaramaUyumsuzluk
             // 
@@ -404,55 +402,57 @@
             this.progressBarDD.Size = new System.Drawing.Size(252, 23);
             this.progressBarDD.TabIndex = 73;
             // 
-            // checkEditAlgobarDataContext
+            // tabNavigationPage2
             // 
-            this.checkEditAlgobarDataContext.Enabled = false;
-            this.checkEditAlgobarDataContext.Location = new System.Drawing.Point(330, 78);
-            this.checkEditAlgobarDataContext.Name = "checkEditAlgobarDataContext";
-            this.checkEditAlgobarDataContext.Properties.Caption = "DB - Algobar Data";
-            this.checkEditAlgobarDataContext.Size = new System.Drawing.Size(112, 20);
-            this.checkEditAlgobarDataContext.TabIndex = 16;
-            this.checkEditAlgobarDataContext.TabStop = false;
+            this.tabNavigationPage2.Caption = "Tamamlama";
+            this.tabNavigationPage2.Controls.Add(this.progressBarImkbBarDataTekSembol);
+            this.tabNavigationPage2.Controls.Add(this.btnImkbBarDataTekSembol);
+            this.tabNavigationPage2.Controls.Add(this.btnImkbBarDataSembol);
+            this.tabNavigationPage2.Controls.Add(this.progressBarImkbBarDataSembol);
+            this.tabNavigationPage2.Name = "tabNavigationPage2";
+            this.tabNavigationPage2.Size = new System.Drawing.Size(445, 319);
             // 
-            // btnImkbTaramaSRSI
+            // progressBarImkbBarDataTekSembol
             // 
-            this.btnImkbTaramaSRSI.Appearance.Options.UseTextOptions = true;
-            this.btnImkbTaramaSRSI.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.btnImkbTaramaSRSI.Checked = true;
-            this.btnImkbTaramaSRSI.Location = new System.Drawing.Point(6, 181);
-            this.btnImkbTaramaSRSI.Name = "btnImkbTaramaSRSI";
-            this.btnImkbTaramaSRSI.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnImkbTaramaSRSI.Size = new System.Drawing.Size(176, 23);
-            this.btnImkbTaramaSRSI.TabIndex = 83;
-            this.btnImkbTaramaSRSI.TabStop = false;
-            this.btnImkbTaramaSRSI.Text = "IMKB - Tarama SRSI - 1 DK";
+            this.progressBarImkbBarDataTekSembol.Location = new System.Drawing.Point(173, 35);
+            this.progressBarImkbBarDataTekSembol.Name = "progressBarImkbBarDataTekSembol";
+            this.progressBarImkbBarDataTekSembol.Size = new System.Drawing.Size(267, 23);
+            this.progressBarImkbBarDataTekSembol.TabIndex = 73;
+            this.progressBarImkbBarDataTekSembol.Visible = false;
             // 
-            // progressBarTaramaSRSI
+            // btnImkbBarDataTekSembol
             // 
-            this.progressBarTaramaSRSI.Location = new System.Drawing.Point(188, 181);
-            this.progressBarTaramaSRSI.Name = "progressBarTaramaSRSI";
-            this.progressBarTaramaSRSI.Size = new System.Drawing.Size(252, 23);
-            this.progressBarTaramaSRSI.TabIndex = 82;
+            this.btnImkbBarDataTekSembol.Appearance.Options.UseTextOptions = true;
+            this.btnImkbBarDataTekSembol.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.btnImkbBarDataTekSembol.Location = new System.Drawing.Point(5, 35);
+            this.btnImkbBarDataTekSembol.Name = "btnImkbBarDataTekSembol";
+            this.btnImkbBarDataTekSembol.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.btnImkbBarDataTekSembol.Size = new System.Drawing.Size(162, 23);
+            this.btnImkbBarDataTekSembol.TabIndex = 72;
+            this.btnImkbBarDataTekSembol.TabStop = false;
+            this.btnImkbBarDataTekSembol.Text = "IMKB - Bar Data Tek Sembol";
+            this.btnImkbBarDataTekSembol.Visible = false;
             // 
-            // btnImkbBarDataGunSonu
+            // btnImkbBarDataSembol
             // 
-            this.btnImkbBarDataGunSonu.Appearance.Options.UseTextOptions = true;
-            this.btnImkbBarDataGunSonu.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.btnImkbBarDataGunSonu.Checked = true;
-            this.btnImkbBarDataGunSonu.Location = new System.Drawing.Point(6, 94);
-            this.btnImkbBarDataGunSonu.Name = "btnImkbBarDataGunSonu";
-            this.btnImkbBarDataGunSonu.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnImkbBarDataGunSonu.Size = new System.Drawing.Size(176, 23);
-            this.btnImkbBarDataGunSonu.TabIndex = 85;
-            this.btnImkbBarDataGunSonu.TabStop = false;
-            this.btnImkbBarDataGunSonu.Text = "IMKB - Bar Data Gun Sonu - 5 DK";
+            this.btnImkbBarDataSembol.Appearance.Options.UseTextOptions = true;
+            this.btnImkbBarDataSembol.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.btnImkbBarDataSembol.Location = new System.Drawing.Point(5, 6);
+            this.btnImkbBarDataSembol.Name = "btnImkbBarDataSembol";
+            this.btnImkbBarDataSembol.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.btnImkbBarDataSembol.Size = new System.Drawing.Size(162, 23);
+            this.btnImkbBarDataSembol.TabIndex = 71;
+            this.btnImkbBarDataSembol.TabStop = false;
+            this.btnImkbBarDataSembol.Text = "IMKB - Bar Data Sembol Tarihsel";
+            this.btnImkbBarDataSembol.Visible = false;
             // 
-            // progressBarImkbBarDataGunSonu
+            // progressBarImkbBarDataSembol
             // 
-            this.progressBarImkbBarDataGunSonu.Location = new System.Drawing.Point(188, 94);
-            this.progressBarImkbBarDataGunSonu.Name = "progressBarImkbBarDataGunSonu";
-            this.progressBarImkbBarDataGunSonu.Size = new System.Drawing.Size(252, 23);
-            this.progressBarImkbBarDataGunSonu.TabIndex = 84;
+            this.progressBarImkbBarDataSembol.Location = new System.Drawing.Point(173, 6);
+            this.progressBarImkbBarDataSembol.Name = "progressBarImkbBarDataSembol";
+            this.progressBarImkbBarDataSembol.Size = new System.Drawing.Size(267, 23);
+            this.progressBarImkbBarDataSembol.TabIndex = 70;
+            this.progressBarImkbBarDataSembol.Visible = false;
             // 
             // FrmMain
             // 
@@ -468,6 +468,7 @@
             this.tabPageMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grupControlStart)).EndInit();
             this.grupControlStart.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditAlgobarDataContext.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSembol.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndCalendar.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndCalendar.Properties)).EndInit();
@@ -480,17 +481,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);
-            this.tabNavigationPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataTekSembol.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataSembol.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataGunSonu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarTaramaSRSI.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarTaramaUyumsuzluk.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarKompozitData.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarData.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbYuzeyselVeri.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarDD.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditAlgobarDataContext.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarTaramaSRSI.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataGunSonu.Properties)).EndInit();
+            this.tabNavigationPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataTekSembol.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarImkbBarDataSembol.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1230,12 +1230,7 @@ namespace ideal.Helper
         /// </summary>
         public async Task IMKB_Uyumsuzluk_OkuAsync(ProgressBarControl bar, CancellationToken ct = default)
         {
-            var sistem = User.MySistem10;
-            if (sistem == null)
-            {
-                _ = TelegramHelper.SendMessageAsync("MySistem10 null! Lütfen sistemi başlatın.");
-                return;
-            }
+            var sistem = User.MySistem10;            
 
             var semboller = await SembolListesiniOkuAsync().ConfigureAwait(false);
             if (semboller == null || semboller.Count == 0)
@@ -1267,7 +1262,7 @@ namespace ideal.Helper
             var limiter = new SemaphoreSlim(3);
             int completed = 0;
 
-            var periyotlar = new[] { "1", "5", "15", "20", "30", "60", "120", "240", "G", "H", "A" };
+            var periyotlar = new[] { "5", "15", "20", "30", "60", "120", "240", "G"};
 
             var tasks = semboller.Select(sbl => Task.Run(async () =>
             {
@@ -1618,7 +1613,7 @@ namespace ideal.Helper
         /// </summary>
         public async Task IMKB_RSISinyal_OkuAsync(ProgressBarControl bar, CancellationToken ct = default)
         {
-            var sistem = User.MySistem10;            
+            var sistem = User.MySistem11;            
 
             var semboller = await SembolListesiniOkuAsync().ConfigureAwait(false);
             if (semboller == null || semboller.Count == 0)
@@ -1650,7 +1645,7 @@ namespace ideal.Helper
             var limiter = new SemaphoreSlim(3);
             int completed = 0;
 
-            var periyotlar = new[] { "1", "5", "15", "20", "30", "60", "120", "240", "G", "H", "A" };
+            var periyotlar = new[] { "1", "5", "15", "20", "30", "60", "120", "240", "G"};
 
             var tasks = semboller.Select(sbl => Task.Run(async () =>
             {

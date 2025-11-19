@@ -16,11 +16,12 @@ namespace ideal
         public static cxSistem MySistem8 = null;
         public static cxSistem MySistem9 = null;
         public static cxSistem MySistem10 = null;
+        public static cxSistem MySistem11 = null;
 
 
 
 
-        public void FormYukle(cxSistem sistem1, cxSistem sistem2, cxSistem sistem3, cxSistem sistem4, cxSistem sistem5, cxSistem sistem6, cxSistem sistem7, cxSistem sistem8, cxSistem sistem9, cxSistem sistem10)
+        public void FormYukle(cxSistem sistem1, cxSistem sistem2, cxSistem sistem3, cxSistem sistem4, cxSistem sistem5, cxSistem sistem6, cxSistem sistem7, cxSistem sistem8, cxSistem sistem9, cxSistem sistem10, cxSistem sistem11)
         {
             MySistem1 = sistem1;
             MySistem2 = sistem2;
@@ -32,6 +33,7 @@ namespace ideal
             MySistem8 = sistem8;   
             MySistem9 = sistem9;
             MySistem10 = sistem10;
+            MySistem11 = sistem11;
 
             var config = AppConfig.Instance;
 
